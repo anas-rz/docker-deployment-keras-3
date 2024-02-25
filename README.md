@@ -1,4 +1,4 @@
-# Deploying Multibackend Applications wiht Keras 3
+# Deploying Multibackend Applications with Keras 3
 
 This project aims to deploy a image classification model using Docker. Due to Multi-backend operations from Keras 3.0, the model works seemlessly across PyTorch, TensorFlow or JAX backends.
 
