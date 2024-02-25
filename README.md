@@ -23,10 +23,10 @@ cd docker-deployment-keras-3
 docker build -t image_classification_mlp .
 ```
 
-5. Run the Docker container.
+4. Run the Docker container.
 
 ```bash 
-sudo docker container run -d -p 8501:8501 image_classification_mlp
+docker container run -d -p 8501:8501 image_classification_mlp
 ```
 The streamlit application runs on https://localhost:8501. If you are running it on a server, you can test is using port forwarding to local IP.
 
