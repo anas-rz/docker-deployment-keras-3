@@ -7,10 +7,9 @@ COPY requirements.txt /app/
 RUN pip install -r requirements.txt 
 RUN pip install keras --upgrade
 ENV KERAS_BACKEND jax
-ENV PORT 80
 
 COPY . /app
 
-EXPOSE 80
+EXPOSE 8080
 
-CMD streamlit run app.py --server.port=${PORT} --browser.serverAddress="0.0.0.0"
+CMD streamlit run app.py --server.port=8080 --browser.serverAddress="0.0.0.0"
